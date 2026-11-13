@@ -1,3 +1,5 @@
+//01
+//Constructor
 // Declare User Class
 class User {
     name: string;
@@ -13,3 +15,20 @@ class User {
 const user1 = new User("Reyad" , 24);
 
 console.log(user1.name); //Output: Reyad
+
+//02
+// Parameter Properties
+// Shortcut
+class Book{
+    constructor(
+        public title: string,
+        private pages: number
+    ){}
+
+    getBookInfo(){
+        console.log(`Title: ${this.title} and Page: ${this.pages}`)
+    }
+}
+
+const book1 = new Book("ABC" , 100);
+console.log(book1.getBookInfo()); //Output: Title: ABC and Page: 100
