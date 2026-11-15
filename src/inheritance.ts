@@ -51,3 +51,30 @@ const myPhone = new SmartPhone("Samsung", true);
 console.log(myPhone.brand);   // Output: Samsung
 console.log(myPhone.isSmart); // Output: true
 myPhone.turnOn(); //Output: Device is turning on...
+
+//03
+//Override Method
+class Prani {
+    makeSound(){
+        console.log("Some animals sound...")
+    }
+}
+
+class Dogi extends Prani {
+
+    override makeSound(){
+        console.log("Dog barks: Woof! Woof!")
+    }
+}
+
+class Cat extends Prani {
+    override makeSound(){
+        console.log("Cat meows: Meow! Meow!");
+    }
+}
+
+const myCat = new Cat();
+myCat.makeSound(); // Output: Cat meows: Meow! Meow!
+
+const myDog = new Dogi();
+myDog.makeSound(); // Output: Dog barks: Woof! Woof!
