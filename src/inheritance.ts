@@ -54,6 +54,8 @@ myPhone.turnOn(); //Output: Device is turning on...
 
 //03
 //Override Method
+// Inheritance + Override = Polymorphism
+// Poly (Many) + Morph (Forms) = Polymorphism
 class Prani {
     makeSound(){
         console.log("Some animals sound...")
