@@ -72,3 +72,29 @@ const myAccount = new BankAccount();
 
 myAccount.showBalance(1111); //Output: Wrong Pin! Please Try Again
 myAccount.showBalance(4321); //Output: Correct Pin! Your balance: 10000 BDT
+
+//04
+// Inheritance
+// Protected
+class Person {
+
+  constructor(
+    protected nationalId: number
+  ){}
+}
+
+class Employee extends Person {
+  code: number;
+
+  constructor(nationalId: number , code: number){
+    super(nationalId);
+    this.code = code;
+  }
+
+  showInfo(){
+    console.log(`Employee ID Card Number: ${this.nationalId}`);
+  }
+}
+
+const emp = new Employee(123456789, 101);
+emp.showInfo(); // Output: Employee ID Card Number: 123456789
