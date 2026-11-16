@@ -1,4 +1,5 @@
 // Constructor: A special function that sets up data when an object is created.
+//01
 class User {
     name: string;
     age: number;
@@ -13,6 +14,7 @@ class User {
 const user1 = new User("Reyad", 24);
 console.log(user1.name); // Output: Reyad
 
+//02
 // Parameter Properties: A shortcut to make and set properties directly in constructor.
 class Book {
     constructor(

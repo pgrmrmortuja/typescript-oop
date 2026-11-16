@@ -1,4 +1,5 @@
 // Inheritance: One class can use things from another class.
+//01
 class Animal {
     name: string;
 
@@ -23,6 +24,7 @@ dog.bark(); // Output: Piku is barking.
 dog.eat();  // Output: Piku is eating.
 
 
+//02
 // Super Method: Sending data back to the parent class constructor using super().
 class Device {
     brand: string;
@@ -52,6 +54,7 @@ console.log(myPhone.isSmart); // Output: true
 myPhone.turnOn();             // Output: Device is turning on...
 
 
+//03
 // Polymorphism and Method Overriding: Child classes change parent's method for their own use.
 class Prani {
     makeSound() {
