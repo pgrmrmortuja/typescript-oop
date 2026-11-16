@@ -59,3 +59,13 @@ const myAccount: PublicAccountInfo = {
     holderName: "Rahim Uddin",
     balance: 50000,
 }
+
+//Record<KeyType, ValueType>
+// 05
+type AppEnvironment = "dev" | "staging" | "prod";
+
+const serverUrls: Record<AppEnvironment, string> = {
+    dev: "http://localhost:3000",
+    staging: "https://staging.app.com",
+    prod: "https://app.com"
+}
