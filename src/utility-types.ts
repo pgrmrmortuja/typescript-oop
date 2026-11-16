@@ -26,3 +26,20 @@ const startServer = (config: Required<AppConfig>) => {
 
 startServer({ apiKey: "xyz-123", timeout: 5000 });
 
+//Pick<K, T>
+//03
+interface Product {
+    id: number,
+    name: string,
+    price: number,
+    description: string,
+    stock: number
+}
+
+type ProductCardInfo = Pick <Product , "name" | "price"> ;
+
+const item: ProductCardInfo = {
+    name: "Laptop",
+    price: 1000000
+}
+
